@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ai-learning-system-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai_learning
+    username: ai_learning
+    password: ai_learning
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+ai:
+  service:
+    base-url: http://localhost:8000

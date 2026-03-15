@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ai_learning_test
+
+logging:
+  level:
+    root: warn
